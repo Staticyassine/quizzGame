@@ -1,0 +1,42 @@
+<div class="quiz" *ngIf="question">
+  <h1 align="center" class="md-display-1">{{ question.label }}</h1>
+  <mat-card class="question-form-container">
+    <mat-card-content>
+      <form>
+        <div class="form-group">
+          <label *ngFor="let choice of question.choices">
+            <mat-grid-list cols="2" rowHeight="2:1">
+              <mat-grid-tile *ngFor="let img of choice.src">
+                <img src="{{ img }}" />
+              </mat-grid-tile>
+            </mat-grid-list>
+            <!-- <li>
+              <span class="choice-container">
+                <input type="radio" [value]="choice" formControlName="choice" />
+                <span>{{ choice.value }}</span>
+              </span>
+            </li> -->
+          </label>
+          <div style="display: flex; justify-content: center">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Designation of the manufacturing defect</mat-label>
+              <input
+                type="text"
+                matInput
+                [formControl]="text"
+                [errorStateMatcher]="matcher"
+                placeholder="Designation of the manufacturing defect"
+                (change)="onChange()"
+                (focus)="reset()"
+              />
+              <mat-hint>Write your answer above please!</mat-hint>
+              <mat-error *ngIf="text.hasError('required')">
+                Your name is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

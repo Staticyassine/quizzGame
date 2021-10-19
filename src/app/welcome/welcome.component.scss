@@ -1,0 +1,44 @@
+.welcome-container {
+  max-width: 1000px;
+  margin: 100px auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-link-btn {
+  font-size: 30px;
+  color: black;
+  text-decoration: none !important;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-card {
+  margin: 20px;
+}
+
+.example-form {
+  min-width: 250px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.namestyle {
+  color: #3f51b5;
+}
+
+.hello {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
