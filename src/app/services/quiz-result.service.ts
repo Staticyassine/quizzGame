@@ -37,7 +37,7 @@ export class QuizResultService {
 
   bokabooka() {
     this.senddata(this.baseUrl, {
-      to: "yassinehmaidouch@gmail.com",
+      to: "elkard.ranya@gmail.com",
       subject:
         "Quiz answer for the candidate named: " + this.resultStep2[0].name,
       text:
