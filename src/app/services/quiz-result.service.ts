@@ -29,7 +29,7 @@ export class QuizResultService {
   }
 
   constructor(private http: HttpClient) {}
-  baseUrl = "http://localhost:5000/text-mail";
+  baseUrl = "https://quizemailsender.herokuapp.com/text-mail";
 
   senddata(url, data) {
     return this.http.post(url, data);
