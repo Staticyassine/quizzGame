@@ -14,6 +14,11 @@
   text-decoration: none !important;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .signature {
   display: flex;
   justify-content: center;
@@ -29,7 +34,12 @@
   color: #3f51b5;
   font-weight: 700;
 }
-
+.footer .logo {
+  height: 3rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+}
 .flex-container {
   display: flex;
   justify-content: center;
