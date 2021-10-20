@@ -14,6 +14,22 @@
   text-decoration: none !important;
 }
 
+.signature {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.signature .dev {
+  font-size: 10px;
+  color: #3f51b5;
+}
+.signature .name {
+  font-size: 10px;
+  color: #3f51b5;
+  font-weight: 700;
+}
+
 .flex-container {
   display: flex;
   justify-content: center;
