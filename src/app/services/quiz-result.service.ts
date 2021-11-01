@@ -50,7 +50,13 @@ export class QuizResultService {
         "<br> answer 3: " +
         this.resultStep2[0].answers[2] +
         "<br> answer 4: " +
-        this.resultStep2[0].answers[3],
+        this.resultStep2[0].answers[3] +
+        "<br> answer 5: " +
+        this.resultStep2[0].answers[4] +
+        "<br> answer 6: " +
+        this.resultStep2[0].answers[5] +
+        "<br> answer 7: " +
+        this.resultStep2[0].answers[6],
     }).subscribe(
       (data) => {
         let res: any = data;
