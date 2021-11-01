@@ -5,14 +5,7 @@
       {
         "value": "5",
         "correct": true,
-        "src": [
-          "../../assets/images/egyptians.png",
-          "../../assets/images/egyptians.png",
-          "../../assets/images/egyptians.png",
-          "../../assets/images/egyptians.png",
-          "../../assets/images/egyptians.png",
-          "../../assets/images/egyptians.png"
-        ]
+        "src": ["../../assets/images/CouturedrapeauNOK.PNG"]
       }
     ]
   },
@@ -22,14 +15,7 @@
       {
         "value": "5",
         "correct": true,
-        "src": [
-          "../../assets/images/island.png",
-          "../../assets/images/island.png",
-          "../../assets/images/island.png",
-          "../../assets/images/island.png",
-          "../../assets/images/island.png",
-          "../../assets/images/island.png"
-        ]
+        "src": ["../../assets/images/Couturevisible.PNG"]
       }
     ]
   },
@@ -39,14 +25,7 @@
       {
         "value": "5",
         "correct": true,
-        "src": [
-          "../../assets/images/maths.png",
-          "../../assets/images/maths.png",
-          "../../assets/images/maths.png",
-          "../../assets/images/maths.png",
-          "../../assets/images/maths.png",
-          "../../assets/images/maths.png"
-        ]
+        "src": ["../../assets/images/erreurref.PNG"]
       }
     ]
   },
@@ -56,14 +35,37 @@
       {
         "value": "5",
         "correct": true,
-        "src": [
-          "../../assets/images/spices.png",
-          "../../assets/images/spices.png",
-          "../../assets/images/spices.png",
-          "../../assets/images/spices.png",
-          "../../assets/images/spices.png",
-          "../../assets/images/spices.png"
-        ]
+        "src": ["../../assets/images/mqprofile.PNG"]
+      }
+    ]
+  },
+  {
+    "label": "What is the name of this defect?",
+    "choices": [
+      {
+        "value": "5",
+        "correct": true,
+        "src": ["../../assets/images/plicouture.PNG"]
+      }
+    ]
+  },
+  {
+    "label": "What is the name of this defect?",
+    "choices": [
+      {
+        "value": "5",
+        "correct": true,
+        "src": ["../../assets/images/Tringle.PNG"]
+      }
+    ]
+  },
+  {
+    "label": "What is the name of this defect?",
+    "choices": [
+      {
+        "value": "5",
+        "correct": true,
+        "src": ["../../assets/images/Ptsaute.PNG"]
       }
     ]
   }

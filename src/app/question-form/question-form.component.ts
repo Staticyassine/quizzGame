@@ -4,7 +4,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 // importing model for this component: Question form
 import { Question } from "../quiz.model";
-
+interface Deffect {
+  value: string;
+  viewValue: string;
+}
 // decorator used to tell Angular that class below is a component
 // selector property defines custom HTML element this component will render into
 @Component({
@@ -21,6 +24,22 @@ export class QuestionFormComponent implements OnInit {
   value = "Designation of the manufacturing defect";
   text = new FormControl("", Validators.required);
 
+  deffects: Deffect[] = [
+    { value: "Couture-visible", viewValue: "Couture visible" },
+    { value: "Couture-drapeau-NOK", viewValue: "Couture drapeau NOK" },
+    { value: "Manque-profile", viewValue: "Manque profile" },
+    { value: "Erreur-reference", viewValue: "Erreur reference" },
+    { value: "Point-sauté", viewValue: "Point sauté" },
+    { value: "Pli-couture", viewValue: "Pli couture" },
+    {
+      value: "Tringle-non-passee-dans-le-fourreau",
+      viewValue: "Tringle non passee dans le fourreau",
+    },
+  ];
+  changeClient(value) {
+    console.log(value);
+    this.onChoiceMade.emit(value);
+  }
   // method called, once component has received all inputs
   // initialized form controller will link model and view
   // also wire up the form controller with onChange method
@@ -29,8 +48,9 @@ export class QuestionFormComponent implements OnInit {
   }
 
   onChange = () => {
-    this.onChoiceMade.emit(this.text.value);
+    console.log(this.text.value);
 
+    this.onChoiceMade.emit(this.text.value);
     //  this.text.setValue("");
   };
   reset() {

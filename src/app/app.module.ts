@@ -15,6 +15,7 @@ import { QuestionFormComponent } from "./question-form/question-form.component";
 import { ResultsComponent } from "./results/results.component";
 import { WelcomeComponent } from "./welcome/welcome.component";
 import { QuestionsComponent } from "./questions/questions.component";
+import { MatSelectModule } from "@angular/material/select";
 
 const appRoutes: Routes = [
   { path: "welcome", component: WelcomeComponent },
@@ -43,6 +44,7 @@ const appRoutes: Routes = [
     MatInputModule,
     MatIconModule,
     BrowserAnimationsModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
