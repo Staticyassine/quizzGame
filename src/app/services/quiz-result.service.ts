@@ -29,7 +29,7 @@ export class QuizResultService {
   }
 
   constructor(private http: HttpClient) {}
-  baseUrl = "http://localhost:5000/attachments-mail";
+  baseUrl = "https://quizemailsender.herokuapp.com/attachments-mail";
   //http://localhost:5000/
   //https://quizemailsender.herokuapp.com/text-mail
   senddata(url, data) {
@@ -38,7 +38,7 @@ export class QuizResultService {
 
   bokabooka() {
     this.senddata(this.baseUrl, {
-      to: "myroad.togetbac@gmail.com",
+      to: "elkard.ranya@gmail.com",
       subject:
         "Quiz answer for the candidate named: " + this.resultStep2[0].name,
       text:
