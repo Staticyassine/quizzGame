@@ -16,6 +16,7 @@ import { ResultsComponent } from "./results/results.component";
 import { WelcomeComponent } from "./welcome/welcome.component";
 import { QuestionsComponent } from "./questions/questions.component";
 import { MatSelectModule } from "@angular/material/select";
+import { DatePipe } from "@angular/common";
 
 const appRoutes: Routes = [
   { path: "welcome", component: WelcomeComponent },
@@ -46,7 +47,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MatSelectModule,
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

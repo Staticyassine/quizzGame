@@ -1,5 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { FormControl, Validators } from "@angular/forms";
+
 import { QuestionsService } from "../questions.service";
 import { Quiz } from "../quiz.model";
 import { QuizResultService } from "src/app/services/quiz-result.service";
@@ -13,7 +14,6 @@ export class WelcomeComponent {
   private quiz: Quiz[];
   nameIsWritten = false;
   name = new FormControl("", [Validators.required]);
-
   onInputValueChange() {
     // this.name.setValue("");
     if (this.name.value != "") {

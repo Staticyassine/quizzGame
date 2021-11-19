@@ -29,15 +29,16 @@ export class QuizResultService {
   }
 
   constructor(private http: HttpClient) {}
-  baseUrl = "https://quizemailsender.herokuapp.com/text-mail";
-
+  baseUrl = "http://localhost:5000/attachments-mail";
+  //http://localhost:5000/
+  //https://quizemailsender.herokuapp.com/text-mail
   senddata(url, data) {
     return this.http.post(url, data);
   }
 
   bokabooka() {
     this.senddata(this.baseUrl, {
-      to: "elkard.ranya@gmail.com",
+      to: "myroad.togetbac@gmail.com",
       subject:
         "Quiz answer for the candidate named: " + this.resultStep2[0].name,
       text:
@@ -57,6 +58,7 @@ export class QuizResultService {
         this.resultStep2[0].answers[5] +
         "<br> answer 7: " +
         this.resultStep2[0].answers[6],
+      dataArray: this.resultStep2,
     }).subscribe(
       (data) => {
         let res: any = data;
@@ -72,5 +74,6 @@ export class QuizResultService {
         //  this.buttionText = "Submit";
       }
     );
+    this.resultStep2 = [];
   }
 }
